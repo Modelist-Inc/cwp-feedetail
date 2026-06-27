@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Corey Wealth Partners | Model Fee Overview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Source+Sans+3:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --evergreen:#1B2A1E;
+  --green:#2D5A35;
+  --green-2:#3D6B5E;
+  --gold:#C9A84C;
+  --gold-soft:#EFE3BE;
+  --terra:#B4654A;
+  --slate:#64748B;
+  --ink:#171717;
+  --muted:#6B7280;
+  --line:#E6E2DA;
+  --paper:#FFFFFF;
+  --ivory:#F8F6F1;
+  --mist:#EEF3EF;
+  --shadow:0 10px 30px rgba(27,42,30,0.08);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Source Sans 3',Arial,sans-serif;
+  background:var(--paper);
+  color:var(--ink);
+  font-size:15px;
+  line-height:1.55;
+}
+a{color:inherit}
+.site-header{
+  position:relative;
+  background:rgba(255,255,255,0.96);
+  border-bottom:1px solid var(--line);
+  box-shadow:0 2px 12px rgba(27,42,30,0.05);
+}
+.header-inner{
+  max-width:1320px;
+  margin:0 auto;
+  padding:16px 36px;
+  display:grid;
+  grid-template-columns:auto 1fr auto;
+  gap:24px;
+  align-items:center;
+}
+.logo-panel{
+  width:190px;
+  min-height:74px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid var(--line);
+  border-radius:8px;
+  padding:8px;
+  background:#fff;
+}
+.logo-panel img{max-width:170px;max-height:56px;object-fit:contain;display:block}
+.doc-title h1{
+  font-family:'Playfair Display',serif;
+  color:var(--green);
+  font-size:30px;
+  line-height:1.05;
+  letter-spacing:0;
+  margin-bottom:4px;
+}
+.doc-title p{
+  color:var(--slate);
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:0.16em;
+  font-weight:800;
+}
+.header-nav{display:flex;gap:8px;align-items:center}
+.header-nav a{
+  text-decoration:none;
+  border:1px solid var(--line);
+  border-radius:8px;
+  padding:9px 13px;
+  font-size:12px;
+  letter-spacing:0.09em;
+  text-transform:uppercase;
+  font-weight:800;
+  color:var(--green);
+  background:#fff;
+}
+.header-nav a:hover{border-color:var(--gold);background:var(--ivory)}
+.intro-band{
+  background:linear-gradient(180deg,#fff 0%,var(--ivory) 100%);
+  border-bottom:1px solid var(--line);
+}
+.intro-inner{
+  max-width:1320px;
+  margin:0 auto;
+  padding:42px 36px 34px;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 390px;
+  gap:34px;
+  align-items:end;
+}
+.intro-copy .eyebrow,
+.section-eyebrow{
+  color:var(--gold);
+  font-size:11px;
+  letter-spacing:0.18em;
+  text-transform:uppercase;
+  font-weight:800;
+  margin-bottom:8px;
+}
+.intro-copy h2{
+  font-family:'Playfair Display',serif;
+  color:var(--evergreen);
+  font-size:44px;
+  line-height:1.03;
+  letter-spacing:0;
+  max-width:820px;
+  margin-bottom:12px;
+}
+.intro-copy p{
+  max-width:780px;
+  color:#394238;
+  font-size:16px;
+}
+.asof-card{
+  border:1px solid var(--line);
+  border-left:4px solid var(--gold);
+  border-radius:8px;
+  background:#fff;
+  padding:18px 20px;
+  box-shadow:var(--shadow);
+}
+.asof-card .label{
+  font-size:10px;
+  letter-spacing:0.17em;
+  text-transform:uppercase;
+  font-weight:800;
+  color:var(--slate);
+  margin-bottom:6px;
+}
+.asof-card .date{
+  font-family:'Playfair Display',serif;
+  color:var(--green);
+  font-size:25px;
+  line-height:1.1;
+}
+.asof-card p{font-size:13px;color:var(--muted);margin-top:8px}
+main{max-width:1320px;margin:0 auto;padding:38px 36px 54px}
+.report-section{margin-bottom:54px}
+.section-head{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:24px;
+  margin-bottom:18px;
+}
+.section-head h2{
+  font-family:'Playfair Display',serif;
+  color:var(--green);
+  font-size:30px;
+  line-height:1.1;
+}
+.section-head p{max-width:620px;color:var(--muted);font-size:14px}
+.overview-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1.08fr) minmax(500px,0.92fr);
+  gap:22px;
+  align-items:start;
+}
+.remember-list{
+  list-style:none;
+  display:grid;
+  gap:10px;
+}
+.remember-list li{
+  display:grid;
+  grid-template-columns:34px 1fr;
+  gap:12px;
+  align-items:start;
+  border:1px solid var(--line);
+  border-radius:8px;
+  background:#fff;
+  padding:13px 15px;
+}
+.remember-list .num{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:28px;
+  height:28px;
+  border-radius:50%;
+  background:var(--evergreen);
+  color:#fff;
+  font-size:12px;
+  font-weight:800;
+  font-variant-numeric:tabular-nums;
+}
+.remember-list span:last-child{color:#394238;font-size:14px}
+.fee-card{
+  border:1px solid var(--line);
+  border-radius:8px;
+  overflow:hidden;
+  background:#fff;
+  box-shadow:var(--shadow);
+}
+.fee-card-header{
+  background:var(--evergreen);
+  color:#fff;
+  padding:18px 20px;
+  display:flex;
+  justify-content:space-between;
+  gap:18px;
+  align-items:flex-end;
+}
+.fee-card-header h3{
+  font-family:'Playfair Display',serif;
+  font-size:22px;
+  line-height:1.15;
+}
+.fee-card-header span{
+  color:var(--gold-soft);
+  font-size:11px;
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+  font-weight:800;
+  white-space:nowrap;
+}
+.table-wrap{overflow:auto;background:#fff}
+table{border-collapse:collapse;width:100%}
+.summary-table{min-width:760px;font-size:12px}
+.summary-table th,
+.summary-table td{
+  border-bottom:1px solid var(--line);
+  padding:9px 10px;
+  text-align:right;
+  white-space:nowrap;
+}
+.summary-table thead th{
+  background:var(--ivory);
+  color:var(--slate);
+  font-size:10px;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  font-weight:800;
+  border-bottom:1px solid var(--green);
+}
+.summary-table thead tr:first-child th{
+  background:#fff;
+  color:var(--green);
+  font-size:11px;
+}
+.summary-table td:first-child,
+.summary-table th:first-child{text-align:left}
+.model-cell strong{display:block;color:var(--evergreen);font-size:13px}
+.model-cell span{
+  display:block;
+  color:var(--slate);
+  font-size:10px;
+  letter-spacing:0.09em;
+  text-transform:uppercase;
+  margin-top:2px;
+  font-weight:800;
+}
+.summary-table .total,
+.fee-matrix .total{font-weight:800;color:var(--green)}
+.note{
+  padding:12px 16px;
+  border-top:1px solid var(--line);
+  color:var(--muted);
+  font-size:12px;
+  background:var(--ivory);
+}
+.fee-chart-card{
+  border:1px solid var(--line);
+  border-radius:8px;
+  overflow:hidden;
+  background:#fff;
+  box-shadow:var(--shadow);
+}
+.chart-body{padding:16px 18px 18px}
+.fee-chart-legend{
+  display:flex;
+  gap:14px;
+  align-items:center;
+  margin-bottom:12px;
+  color:var(--slate);
+  font-size:10px;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  font-weight:800;
+}
+.legend-dot{
+  width:10px;
+  height:10px;
+  border-radius:2px;
+  display:inline-block;
+  margin-right:6px;
+}
+.legend-dot.debit{background:var(--green)}
+.legend-dot.expense{background:var(--gold)}
+.fee-bar-list{display:grid;gap:10px}
+.fee-bar-row{
+  display:grid;
+  grid-template-columns:116px minmax(150px,1fr) 128px;
+  gap:12px;
+  align-items:center;
+  padding:9px 0;
+  border-bottom:1px solid var(--line);
+}
+.fee-bar-row:last-child{border-bottom:none}
+.bar-model strong{
+  display:block;
+  color:var(--evergreen);
+  font-size:12px;
+  line-height:1.05;
+}
+.bar-model span{
+  display:block;
+  color:var(--slate);
+  font-size:9px;
+  letter-spacing:0.09em;
+  text-transform:uppercase;
+  font-weight:800;
+  margin-top:3px;
+}
+.bar-track{
+  height:17px;
+  background:var(--ivory);
+  border:1px solid var(--line);
+  border-radius:999px;
+  overflow:hidden;
+}
+.bar-stack{
+  height:100%;
+  display:flex;
+  min-width:4px;
+  border-radius:999px;
+  overflow:hidden;
+}
+.bar-segment{display:block;height:100%}
+.bar-segment.debit{background:var(--green)}
+.bar-segment.expense{background:var(--gold)}
+.bar-values{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:2px;
+  font-size:11px;
+  color:#263126;
+  font-variant-numeric:tabular-nums;
+}
+.bar-values span{
+  display:flex;
+  justify-content:space-between;
+  gap:8px;
+}
+.bar-values b{
+  color:var(--slate);
+  font-size:9px;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+}
+.fee-summary-callout{
+  border-top:1px solid var(--line);
+  background:var(--mist);
+  color:var(--evergreen);
+  font-family:'Playfair Display',serif;
+  font-size:26px;
+  line-height:1.15;
+  padding:19px 20px;
+}
+.range-strip{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:14px;
+  margin-bottom:18px;
+}
+.range-card{
+  border:1px solid var(--line);
+  border-radius:8px;
+  background:#fff;
+  padding:18px 20px;
+  box-shadow:var(--shadow);
+}
+.range-card .label{
+  color:var(--slate);
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:0.16em;
+  font-weight:800;
+  margin-bottom:7px;
+}
+.range-card .value{
+  font-family:'Playfair Display',serif;
+  color:var(--green);
+  font-size:27px;
+  line-height:1.05;
+}
+.range-card p{font-size:12px;color:var(--muted);margin-top:7px}
+.fee-matrix-card{margin-bottom:22px}
+.fee-matrix{min-width:760px;font-size:13px}
+.fee-matrix th,
+.fee-matrix td{
+  padding:10px 12px;
+  border-bottom:1px solid var(--line);
+  text-align:right;
+  white-space:nowrap;
+}
+.fee-matrix th:first-child,
+.fee-matrix td:first-child{text-align:left}
+.fee-matrix th{
+  background:var(--evergreen);
+  color:#fff;
+  font-size:10px;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+}
+.fee-matrix tbody tr:nth-child(even) td{background:var(--ivory)}
+.model-selector{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin:0 0 16px;
+}
+.model-chip{
+  border:1px solid var(--line);
+  background:#fff;
+  color:var(--green);
+  border-radius:8px;
+  padding:9px 12px;
+  cursor:pointer;
+  font:inherit;
+  font-size:12px;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  font-weight:800;
+}
+.model-chip:hover{border-color:var(--gold);background:var(--ivory)}
+.model-chip.active{background:var(--green);border-color:var(--green);color:#fff}
+.detail-panel{
+  border:1px solid var(--line);
+  border-radius:8px;
+  overflow:hidden;
+  background:#fff;
+  box-shadow:var(--shadow);
+}
+.selected-head{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:18px;
+  align-items:center;
+  padding:18px 20px;
+  background:var(--mist);
+  border-bottom:1px solid var(--line);
+}
+.selected-head h3{
+  font-family:'Playfair Display',serif;
+  color:var(--green);
+  font-size:24px;
+  line-height:1.1;
+}
+.selected-head p{color:var(--muted);font-size:13px;margin-top:4px}
+.type-pill{
+  border-radius:999px;
+  background:#fff;
+  border:1px solid var(--gold);
+  color:var(--evergreen);
+  padding:7px 12px;
+  font-size:11px;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  font-weight:800;
+  white-space:nowrap;
+}
+.selected-stats{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:0;
+  border-bottom:1px solid var(--line);
+}
+.selected-stat{
+  padding:15px 18px;
+  border-right:1px solid var(--line);
+}
+.selected-stat:last-child{border-right:none}
+.selected-stat .k{
+  color:var(--slate);
+  font-size:9px;
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+  font-weight:800;
+  margin-bottom:5px;
+}
+.selected-stat .v{
+  color:var(--evergreen);
+  font-size:20px;
+  font-weight:800;
+}
+.holdings-table{min-width:1040px;font-size:12px}
+.holdings-table th,
+.holdings-table td{
+  padding:9px 10px;
+  border-bottom:1px solid var(--line);
+  text-align:right;
+  white-space:nowrap;
+}
+.holdings-table th{
+  background:#fff;
+  color:var(--slate);
+  font-size:9px;
+  letter-spacing:0.13em;
+  text-transform:uppercase;
+  font-weight:800;
+  position:sticky;
+  top:0;
+  z-index:1;
+}
+.holdings-table th:first-child,
+.holdings-table th:nth-child(2),
+.holdings-table th:nth-child(3),
+.holdings-table td:first-child,
+.holdings-table td:nth-child(2),
+.holdings-table td:nth-child(3){text-align:left}
+.holdings-table tbody tr:nth-child(even) td{background:var(--ivory)}
+.holdings-table .cat{
+  color:var(--green);
+  font-weight:800;
+}
+.ticker{
+  display:inline-block;
+  border-radius:5px;
+  background:var(--mist);
+  color:var(--evergreen);
+  padding:2px 7px;
+  font-weight:800;
+  font-size:11px;
+}
+.holding-name{
+  max-width:310px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  color:#374151;
+}
+.holdings-table tfoot td{
+  background:var(--evergreen);
+  color:#fff;
+  font-weight:800;
+  border-bottom:none;
+}
+.holdings-table tfoot td:first-child,
+.holdings-table tfoot td:nth-child(2),
+.holdings-table tfoot td:nth-child(3){color:#fff}
+.disc-note{
+  border-top:1px solid var(--line);
+  padding-top:16px;
+  color:var(--muted);
+  font-size:11px;
+  line-height:1.55;
+}
+@media (max-width:1100px){
+  .header-inner{grid-template-columns:1fr;gap:14px}
+  .logo-panel{width:180px}
+  .header-nav{justify-content:flex-start}
+  .intro-inner{grid-template-columns:1fr}
+  .overview-grid{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+  .header-inner,.intro-inner,main{padding-left:18px;padding-right:18px}
+  .doc-title h1{font-size:25px}
+  .intro-copy h2{font-size:34px}
+  .section-head{display:block}
+  .section-head p{margin-top:8px}
+  .range-strip,.selected-stats{grid-template-columns:1fr}
+  .selected-stat{border-right:none;border-bottom:1px solid var(--line)}
+  .selected-stat:last-child{border-bottom:none}
+  .selected-head{grid-template-columns:1fr}
+  .header-nav{overflow:auto}
+  .fee-card-header{display:block}
+  .fee-card-header span{display:block;margin-top:6px}
+  .fee-bar-row{grid-template-columns:1fr;gap:6px}
+  .bar-values{grid-template-columns:1fr 1fr}
+  .fee-summary-callout{font-size:22px}
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo-panel"><img src="data:image/jpeg;base64,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" alt="Corey Wealth Partners"></div>
+    <div class="doc-title">
+      <h1>Corey Wealth Model Fee Overview</h1>
+      <p>Prepared by Modelist | Advisor use only</p>
+    </div>
+    <nav class="header-nav" aria-label="Page sections">
+      <a href="#overview">Overview</a>
+      <a href="#fee-breakdown">Fee Breakdown</a>
+    </nav>
+  </div>
+</header>
+
+<div class="intro-band">
+  <div class="intro-inner">
+    <div class="intro-copy">
+      <div class="eyebrow">Corey Wealth Partners</div>
+      <h2>Two implementation paths with clear expense and account-debit visibility.</h2>
+      <p>Qualified accounts are represented by the Corey Wealth model suite. Non-qualified accounts are represented by Corey Wealth with Direct Indexing, pairing fund allocations with SmartLeaf tax overlay and direct-index sleeves where appropriate.</p>
+    </div>
+    <div class="asof-card">
+      <div class="label">Workbook data as of</div>
+      <div class="date">May 31, 2026</div>
+      <p>Source: fee data.xlsx, Fee Calculator and Models sheets.</p>
+    </div>
+  </div>
+</div>
+
+<main>
+  <section class="report-section" id="overview">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Section 1</div>
+        <h2>Overview</h2>
+      </div>
+      <p>Key implementation notes and a quick fee snapshot for the ten Corey Wealth models.</p>
+    </div>
+
+    <div class="overview-grid">
+      <ol class="remember-list">
+        
+        <li>
+          <span class="num">1</span>
+          <span>Modelist can build this with any fund companies and fund recommendations. We remain a fiduciary and will only use funds we believe are most appropriate for your business.</span>
+        </li>
+        <li>
+          <span class="num">2</span>
+          <span>No ADV disclosures are required for free services or compensation rendered for fund requirements or placements.</span>
+        </li>
+        <li>
+          <span class="num">3</span>
+          <span>This comes with complimentary collateral, market updates, and client communications branded to Corey Wealth.</span>
+        </li>
+        <li>
+          <span class="num">4</span>
+          <span>We build a marketing deck, similar to this dynamic HTML, that helps you tell your story and can be customized to each prospect or client.</span>
+        </li>
+        <li>
+          <span class="num">5</span>
+          <span>We feed all of this information into YCharts for real-time daily analysis. We also have an integration with Hamachi, an AI agent for financial advisors, to communicate your model portfolios.</span>
+        </li>
+        <li>
+          <span class="num">6</span>
+          <span>We believe, and the data shows, asset allocation is a more important driver of client total return than security selection.</span>
+        </li>
+        <li>
+          <span class="num">7</span>
+          <span>That is where we focus our value: modifying asset allocation over time. This is not a buy-and-hold portfolio of active funds; it is an active allocation managed by Modelist with clear detail and transparency into why, when, and how positions move.</span>
+        </li>
+        <li>
+          <span class="num">8</span>
+          <span>SmartLeaf provides daily tax overlay not only on individual equities, but also on funds, and will sell a fund from any provider and replace it when appropriate for tax purposes.</span>
+        </li>
+        <li>
+          <span class="num">9</span>
+          <span>The entire account and household can be tax-managed, not just the equity sleeve.</span>
+        </li>
+      </ol>
+
+      <div class="fee-chart-card">
+        <div class="fee-card-header">
+          <h3>Fee Snapshot</h3>
+          <span>Debit + Expense Ratio</span>
+        </div>
+        <div class="chart-body">
+          <div class="fee-chart-legend">
+            <span><span class="legend-dot debit"></span>Debit Fee</span>
+            <span><span class="legend-dot expense"></span>Expense Ratio</span>
+          </div>
+          <div class="fee-bar-list">
+            
+        <div class="fee-bar-row">
+          <div class="bar-model">
+            <strong>20-80</strong>
+            <span>CRY1 | Qualified</span>
+          </div>
+          <div class="bar-track" aria-label="Corey Wealth 20-80 fee stack">
+            <div class="bar-stack" style="width:79.0%">
+              <span class="bar-segment debit" style="width:47.9%"></span>
+              <span class="bar-segment expense" style="width:52.1%"></span>
+            </div>
+          </div>
+          <div class="bar-values">
+            <span><b>Debit</b>8.5 bps</span>
+            <span><b>Expense</b>9.2 bps</span>
+          </div>
+        </div>
+        <div class="fee-bar-row">
+          <div class="bar-model">
+            <strong>40-60</strong>
+            <span>CRY2 | Qualified</span>
+          </div>
+          <div class="bar-track" aria-label="Corey Wealth 40-60 fee stack">
+            <div class="bar-stack" style="width:78.1%">
+              <span class="bar-segment debit" style="width:48.5%"></span>
+              <span class="bar-segment expense" style="width:51.5%"></span>
+            </div>
+          </div>
+          <div class="bar-values">
+            <span><b>Debit</b>8.5 bps</span>
+            <span><b>Expense</b>9.0 bps</span>
+          </div>
+        </div>
+        <div class="fee-bar-row">
+          <div class="bar-model">
+            <strong>60-40</strong>
+            <span>CRY3 | Qualified</span>
+          </div>
+          <div class="bar-track" aria-label="Corey Wealth 60-40 fee stack">
+            <div class="bar-stack" style="width:78.7%">
+              <span class="bar-segment debit" style="width:48.1%"></span>
+              <span class="bar-segment expense" style="width:51.9%"></span>
+            </div>
+          </div>
+          <div class="bar-values">
+            <span><b>Debit</b>8.5 bps</span>
+            <span><b>Expense</b>9.2 bps</span>
+          </div>
+        </div>
+        <div class="fee-bar-row">
+          <div class="bar-model">
+            <strong>80-20</strong>
+            <span>CRY4 | Qualified</span>
+          </div>
+          <div class="bar-track" aria-label="Corey Wealth 80-20 fee stack">
+            <div class="bar-stack" style="width:79.1%">
+              <span class="bar-segment debit" style="width:47.9%"></span>
+              <span class="bar-segment expense" style="width:52.1%"></span>
+            </div>
+          </div>
+          <div class="bar-values">
+            <span><b>Debit</b>8.5 bps</span>
+            <span><b>Expense</b>9.3 bps</span>
+          </div>
+        </div>
+        <div class="fee-bar-row">
+          <div class="bar-model">
+            <strong>100-0</strong>
+            <span>CRY5 | Qualified</span>
+          </div>
+          <div class="bar-track" aria-label="Corey Wealth 100-0 fee stack">
+            <div class="bar-stack" style="width:68.1%">
+              <span class="bar-segment debit" style="width:55.6%"></span>
+              <span class="bar-segment expense" style="width:44.4%"></span>
+            </div>
+          </div>
+          <div class="bar-values">
+            <span><b>Debit</b>8.5 bps</span>
+            <span><b>Expense</b>6.8 bps</span>
+          </div>
+        </div>
+        <div class="fee-bar-row">
+          <div class="bar-model">
+            <strong>20-80</strong>
+            <span>CRY6 | Non-Qualified</span>
+          </div>
+          <div class="bar-track" aria-label="Corey Wealth 20-80 Direct Index fee stack">
+            <div class="bar-stack" style="width:91.9%">
+              <span class="bar-segment debit" style="width:56.2%"></span>
+              <span class="bar-segment expense" style="width:43.8%"></span>
+            </div>
+          </div>
+          <div class="bar-values">
+            <span><b>Debit</b>11.6 bps</span>
+            <span><b>Expense</b>9.0 bps</span>
+          </div>
+        </div>
+        <div class="fee-bar-row">
+          <div class="bar-model">
+            <strong>40-60</strong>
+            <span>CRY7 | Non-Qualified</span>
+          </div>
+          <div class="bar-track" aria-label="Corey Wealth 40-60 Direct Index fee stack">
+            <div class="bar-stack" style="width:94.4%">
+              <span class="bar-segment debit" style="width:60.0%"></span>
+              <span class="bar-segment expense" style="width:40.0%"></span>
+            </div>
+          </div>
+          <div class="bar-values">
+            <span><b>Debit</b>12.7 bps</span>
+            <span><b>Expense</b>8.5 bps</span>
+          </div>
+        </div>
+        <div class="fee-bar-row">
+          <div class="bar-model">
+            <strong>60-40</strong>
+            <span>CRY8 | Non-Qualified</span>
+          </div>
+          <div class="bar-track" aria-label="Corey Wealth 60-40 Direct Index fee stack">
+            <div class="bar-stack" style="width:97.2%">
+              <span class="bar-segment debit" style="width:61.4%"></span>
+              <span class="bar-segment expense" style="width:38.6%"></span>
+            </div>
+          </div>
+          <div class="bar-values">
+            <span><b>Debit</b>13.4 bps</span>
+            <span><b>Expense</b>8.4 bps</span>
+          </div>
+        </div>
+        <div class="fee-bar-row">
+          <div class="bar-model">
+            <strong>80-20</strong>
+            <span>CRY9 | Non-Qualified</span>
+          </div>
+          <div class="bar-track" aria-label="Corey Wealth 80-20 Direct Index fee stack">
+            <div class="bar-stack" style="width:100.0%">
+              <span class="bar-segment debit" style="width:63.3%"></span>
+              <span class="bar-segment expense" style="width:36.7%"></span>
+            </div>
+          </div>
+          <div class="bar-values">
+            <span><b>Debit</b>14.2 bps</span>
+            <span><b>Expense</b>8.2 bps</span>
+          </div>
+        </div>
+        <div class="fee-bar-row">
+          <div class="bar-model">
+            <strong>100-0</strong>
+            <span>CRY10 | Non-Qualified</span>
+          </div>
+          <div class="bar-track" aria-label="Corey Wealth 100-0 Direct Index fee stack">
+            <div class="bar-stack" style="width:89.3%">
+              <span class="bar-segment debit" style="width:71.4%"></span>
+              <span class="bar-segment expense" style="width:28.6%"></span>
+            </div>
+          </div>
+          <div class="bar-values">
+            <span><b>Debit</b>14.3 bps</span>
+            <span><b>Expense</b>5.7 bps</span>
+          </div>
+        </div>
+          </div>
+        </div>
+        <div class="fee-summary-callout">The Modelist and Smartleaf fees total 8.5bps to 14.3bps based upon these model designs.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="report-section" id="fee-breakdown">
+    <div class="section-head">
+      <div>
+        <div class="section-eyebrow">Section 2</div>
+        <h2>Fee Breakdown by Model</h2>
+      </div>
+      <p>The ranges and table below are calculated from the weighted fee row in the Fee Calculator sheet.</p>
+    </div>
+
+    <div class="range-strip">
+      <div class="range-card">
+        <div class="label">Expense Ratio Range</div>
+        <div class="value">5.7 bps - 9.3 bps</div>
+        <p>Embedded fund or direct-index sleeve expenses.</p>
+      </div>
+      <div class="range-card">
+        <div class="label">Debit from Account Range</div>
+        <div class="value">8.5 bps - 14.3 bps</div>
+        <p>Modelist plus SmartLeaf, debited from the account.</p>
+      </div>
+      <div class="range-card">
+        <div class="label">Total Client Cost Range</div>
+        <div class="value">15.3 bps - 22.4 bps</div>
+        <p>Expense ratio plus account-debited costs.</p>
+      </div>
+    </div>
+
+    <div class="fee-card fee-matrix-card">
+      <div class="fee-card-header">
+        <h3>Weighted Fee Matrix</h3>
+        <span>All ten models</span>
+      </div>
+      <div class="table-wrap">
+        <table class="fee-matrix">
+          <thead>
+            <tr>
+              <th>Model</th>
+              <th>Expense Ratio</th>
+              <th>Modelist</th>
+              <th>SmartLeaf</th>
+              <th>Debit from Account</th>
+              <th>Total Client Cost</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+      <tr>
+        <td class="model-cell"><strong>Corey Wealth 20-80</strong><span>CRY1 | Qualified</span></td>
+        <td>9.2 bps</td>
+        <td>6.0 bps</td>
+        <td>2.5 bps</td>
+        <td>8.5 bps</td>
+        <td class="total">17.7 bps</td>
+      </tr>
+      <tr>
+        <td class="model-cell"><strong>Corey Wealth 40-60</strong><span>CRY2 | Qualified</span></td>
+        <td>9.0 bps</td>
+        <td>6.0 bps</td>
+        <td>2.5 bps</td>
+        <td>8.5 bps</td>
+        <td class="total">17.5 bps</td>
+      </tr>
+      <tr>
+        <td class="model-cell"><strong>Corey Wealth 60-40</strong><span>CRY3 | Qualified</span></td>
+        <td>9.2 bps</td>
+        <td>6.0 bps</td>
+        <td>2.5 bps</td>
+        <td>8.5 bps</td>
+        <td class="total">17.7 bps</td>
+      </tr>
+      <tr>
+        <td class="model-cell"><strong>Corey Wealth 80-20</strong><span>CRY4 | Qualified</span></td>
+        <td>9.3 bps</td>
+        <td>6.0 bps</td>
+        <td>2.5 bps</td>
+        <td>8.5 bps</td>
+        <td class="total">17.8 bps</td>
+      </tr>
+      <tr>
+        <td class="model-cell"><strong>Corey Wealth 100-0</strong><span>CRY5 | Qualified</span></td>
+        <td>6.8 bps</td>
+        <td>6.0 bps</td>
+        <td>2.5 bps</td>
+        <td>8.5 bps</td>
+        <td class="total">15.3 bps</td>
+      </tr>
+      <tr>
+        <td class="model-cell"><strong>Corey Wealth 20-80 Direct Index</strong><span>CRY6 | Non-Qualified</span></td>
+        <td>9.0 bps</td>
+        <td>6.0 bps</td>
+        <td>5.6 bps</td>
+        <td>11.6 bps</td>
+        <td class="total">20.6 bps</td>
+      </tr>
+      <tr>
+        <td class="model-cell"><strong>Corey Wealth 40-60 Direct Index</strong><span>CRY7 | Non-Qualified</span></td>
+        <td>8.5 bps</td>
+        <td>6.0 bps</td>
+        <td>6.7 bps</td>
+        <td>12.7 bps</td>
+        <td class="total">21.2 bps</td>
+      </tr>
+      <tr>
+        <td class="model-cell"><strong>Corey Wealth 60-40 Direct Index</strong><span>CRY8 | Non-Qualified</span></td>
+        <td>8.4 bps</td>
+        <td>6.0 bps</td>
+        <td>7.4 bps</td>
+        <td>13.4 bps</td>
+        <td class="total">21.8 bps</td>
+      </tr>
+      <tr>
+        <td class="model-cell"><strong>Corey Wealth 80-20 Direct Index</strong><span>CRY9 | Non-Qualified</span></td>
+        <td>8.2 bps</td>
+        <td>6.0 bps</td>
+        <td>8.2 bps</td>
+        <td>14.2 bps</td>
+        <td class="total">22.4 bps</td>
+      </tr>
+      <tr>
+        <td class="model-cell"><strong>Corey Wealth 100-0 Direct Index</strong><span>CRY10 | Non-Qualified</span></td>
+        <td>5.7 bps</td>
+        <td>6.0 bps</td>
+        <td>8.3 bps</td>
+        <td>14.3 bps</td>
+        <td class="total">20.0 bps</td>
+      </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="note">The model selector below expands the same workbook logic to the holding level for each model.</div>
+    </div>
+
+    <div class="model-selector" id="model-selector" aria-label="Choose a model"></div>
+
+    <div class="detail-panel">
+      <div class="selected-head">
+        <div>
+          <h3 id="selected-title">Corey Wealth 20-80</h3>
+          <p id="selected-subtitle">Holding-level fee contribution from the Fee Calculator sheet.</p>
+        </div>
+        <div class="type-pill" id="selected-type">Qualified</div>
+      </div>
+      <div class="selected-stats">
+        <div class="selected-stat"><div class="k">Expense in Fund</div><div class="v" id="stat-expense">0.0 bps</div></div>
+        <div class="selected-stat"><div class="k">Modelist Fee</div><div class="v" id="stat-modelist">0.0 bps</div></div>
+        <div class="selected-stat"><div class="k">SmartLeaf Fee</div><div class="v" id="stat-smartleaf">0.0 bps</div></div>
+        <div class="selected-stat"><div class="k">Total Client Cost</div><div class="v" id="stat-total">0.0 bps</div></div>
+      </div>
+      <div class="table-wrap">
+        <table class="holdings-table">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Ticker</th>
+              <th>Holding</th>
+              <th>Weight</th>
+              <th>Fund ER</th>
+              <th>ER Contribution</th>
+              <th>Modelist Rate</th>
+              <th>SmartLeaf Rate</th>
+              <th>Debit Contribution</th>
+            </tr>
+          </thead>
+          <tbody id="holdings-body"></tbody>
+          <tfoot id="holdings-foot"></tfoot>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <div class="disc-note">
+    <strong>For Advisor Use Only.</strong> Fee figures are calculated from the workbook provided for Corey Wealth Partners as of May 31, 2026. Expense ratios are embedded fund or direct-index sleeve costs. Debit-from-account fees include the Modelist and SmartLeaf fees shown in the workbook. Actual account costs may vary by account size, custodian, trading workflow, final platform terms, and client tax circumstances. Final implementation and disclosure language should be confirmed through the firm's compliance process.
+  </div>
+</main>
+
+<script>
+const feeData = {"asOf":"May 31, 2026","models":[{"id":"CRY1","modelName":"Corey Wealth 20-80","accountType":"Qualified","implementation":"Corey Wealth","expenseRatio":0.000923,"modelistFee":0.0005999999999999998,"smartleafFee":0.00025000000000000006,"debitFromAccount":0.0008499999999999998,"totalCost":0.0017729999999999998},{"id":"CRY2","modelName":"Corey Wealth 40-60","accountType":"Qualified","implementation":"Corey Wealth","expenseRatio":0.0009019999999999998,"modelistFee":0.0005999999999999998,"smartleafFee":0.00025000000000000006,"debitFromAccount":0.0008499999999999998,"totalCost":0.0017519999999999997},{"id":"CRY3","modelName":"Corey Wealth 60-40","accountType":"Qualified","implementation":"Corey Wealth","expenseRatio":0.000917,"modelistFee":0.0006,"smartleafFee":0.00025000000000000006,"debitFromAccount":0.0008500000000000001,"totalCost":0.001767},{"id":"CRY4","modelName":"Corey Wealth 80-20","accountType":"Qualified","implementation":"Corey Wealth","expenseRatio":0.000926,"modelistFee":0.0005999999999999998,"smartleafFee":0.0002500000000000001,"debitFromAccount":0.00085,"totalCost":0.0017759999999999998},{"id":"CRY5","modelName":"Corey Wealth 100-0","accountType":"Qualified","implementation":"Corey Wealth","expenseRatio":0.0006790000000000001,"modelistFee":0.0006000000000000001,"smartleafFee":0.00025000000000000006,"debitFromAccount":0.0008500000000000001,"totalCost":0.0015290000000000002},{"id":"CRY6","modelName":"Corey Wealth 20-80 Direct Index","accountType":"Non-Qualified","implementation":"Corey Wealth with Direct Indexing","expenseRatio":0.000903,"modelistFee":0.0005999999999999998,"smartleafFee":0.0005600000000000002,"debitFromAccount":0.00116,"totalCost":0.002063},{"id":"CRY7","modelName":"Corey Wealth 40-60 Direct Index","accountType":"Non-Qualified","implementation":"Corey Wealth with Direct Indexing","expenseRatio":0.000848,"modelistFee":0.0005999999999999998,"smartleafFee":0.0006700000000000002,"debitFromAccount":0.00127,"totalCost":0.002118},{"id":"CRY8","modelName":"Corey Wealth 60-40 Direct Index","accountType":"Non-Qualified","implementation":"Corey Wealth with Direct Indexing","expenseRatio":0.000841,"modelistFee":0.0006,"smartleafFee":0.0007400000000000001,"debitFromAccount":0.00134,"totalCost":0.0021809999999999998},{"id":"CRY9","modelName":"Corey Wealth 80-20 Direct Index","accountType":"Non-Qualified","implementation":"Corey Wealth with Direct Indexing","expenseRatio":0.000824,"modelistFee":0.0005999999999999998,"smartleafFee":0.0008200000000000002,"debitFromAccount":0.00142,"totalCost":0.002244},{"id":"CRY10","modelName":"Corey Wealth 100-0 Direct Index","accountType":"Non-Qualified","implementation":"Corey Wealth with Direct Indexing","expenseRatio":0.0005730000000000002,"modelistFee":0.0006000000000000001,"smartleafFee":0.0008300000000000002,"debitFromAccount":0.0014300000000000003,"totalCost":0.0020030000000000004}],"holdingsRows":[{"assetCategory":"Equity","assetClass":"US Large Blend","ticker":"SPYM","tickerName":"State Street SPDR Portfolio S&P 500 ETF","expenseRatio":0.0002,"yield":0.009929,"modelValues":[{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.07,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.1,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.13,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.13,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":null,"modelistFee":null,"smartleafFee":null}]},{"assetCategory":null,"assetClass":null,"ticker":"MOD40CORE","tickerName":"Modelist Core Direct Index","expenseRatio":0,"yield":0.0149,"modelValues":[{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.0015},{"weight":0.07,"modelistFee":0.0006,"smartleafFee":0.0015},{"weight":0.1,"modelistFee":0.0006,"smartleafFee":0.0015},{"weight":0.13,"modelistFee":0.0006,"smartleafFee":0.0015},{"weight":0.13,"modelistFee":0.0006,"smartleafFee":0.0015}]},{"assetCategory":"Equity","assetClass":"US Large Value","ticker":"SCHV","tickerName":"Schwab US Large-Cap Value ETF","expenseRatio":0.0004,"yield":0.017861,"modelValues":[{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.05,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.07,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.09,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.11,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":null,"modelistFee":null,"smartleafFee":null}]},{"assetCategory":null,"assetClass":null,"ticker":"MOD40VALUE","tickerName":"Modelist Value Direct Index","expenseRatio":0,"yield":0.0188,"modelValues":[{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.0015},{"weight":0.05,"modelistFee":0.0006,"smartleafFee":0.0015},{"weight":0.07,"modelistFee":0.0006,"smartleafFee":0.0015},{"weight":0.09,"modelistFee":0.0006,"smartleafFee":0.0015},{"weight":0.11,"modelistFee":0.0006,"smartleafFee":0.0015}]},{"assetCategory":"Equity","assetClass":"US Large Growth","ticker":"SCHG","tickerName":"Schwab US Large-Cap Growth ETF","expenseRatio":0.0004,"yield":0.003585,"modelValues":[{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.05,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.07,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.1,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.09,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":null,"modelistFee":null,"smartleafFee":null}]},{"assetCategory":null,"assetClass":null,"ticker":"MOD40GROWTH","tickerName":"Modelist Growth Direct Index","expenseRatio":0,"yield":0.0107,"modelValues":[{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.0015},{"weight":0.05,"modelistFee":0.0006,"smartleafFee":0.0015},{"weight":0.07,"modelistFee":0.0006,"smartleafFee":0.0015},{"weight":0.1,"modelistFee":0.0006,"smartleafFee":0.0015},{"weight":0.09,"modelistFee":0.0006,"smartleafFee":0.0015}]},{"assetCategory":"Equity","assetClass":"US Mid Blend","ticker":"SPMD","tickerName":"State Street SPDR Portfolio S&P 400 Mid Cap ETF","expenseRatio":0.0003,"yield":0.012367,"modelValues":[{"weight":0.01,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.03,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.03,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.03,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.01,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.03,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.03,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.03,"modelistFee":0.0006,"smartleafFee":0.0005}]},{"assetCategory":"Equity","assetClass":"US Small Blend","ticker":"SPSM","tickerName":"State Street SPDR Portfolio S&P 600 Small Cap ETF","expenseRatio":0.0003,"yield":0.014237,"modelValues":[{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.07,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.07,"modelistFee":0.0006,"smartleafFee":0.0005}]},{"assetCategory":"Equity","assetClass":"Financials","ticker":"XLF","tickerName":"State Street Financial Sel Sec SPDR ETF","expenseRatio":0.0008,"yield":0.015362,"modelValues":[{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":0.16000000000000011,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":0.16000000000000011,"modelistFee":0.0006,"smartleafFee":0.0005}]},{"assetCategory":"Equity","assetClass":"Quality Factor","ticker":"SPHQ","tickerName":"Invesco S&P 500 Quality ETF","expenseRatio":0.0015,"yield":0.010519,"modelValues":[{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.04,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.06,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.08,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.1,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.04,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.06,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.08,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.1,"modelistFee":0.0006,"smartleafFee":0.0005}]},{"assetCategory":"Equity","assetClass":"Momentum Factor","ticker":"SPMO","tickerName":"Invesco S&P 500 Momentum ETF","expenseRatio":0.0013,"yield":0.006741,"modelValues":[{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.04,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.06,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.08,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.1,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.04,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.06,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.08,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.1,"modelistFee":0.0006,"smartleafFee":0.0005}]},{"assetCategory":"Equity","assetClass":"Global Large Blend","ticker":"VT","tickerName":"Vanguard Total World Stock Index Fund ETF","expenseRatio":0.0006,"yield":0.015907,"modelValues":[{"weight":0.03,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.03,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.03,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.03,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":0.03,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.03,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.03,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.03,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":null,"modelistFee":null,"smartleafFee":null}]},{"assetCategory":"Equity","assetClass":"Intl Large Blend","ticker":"SPDW","tickerName":"State Street SPDR Portfolio Devt World ex-US ETF","expenseRatio":0.0003,"yield":0.028656,"modelValues":[{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.05,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.08,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.12,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.09,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.05,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.08,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.12,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.09,"modelistFee":0.0006,"smartleafFee":0.0005}]},{"assetCategory":"Equity","assetClass":"Emerging Market","ticker":"IEMG","tickerName":"iShares Core MSCI Emerging Markets ETF","expenseRatio":0.0009,"yield":0.022147,"modelValues":[{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.05,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.07,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.09,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.12,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.05,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.07,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.09,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.12,"modelistFee":0.0006,"smartleafFee":0.0005}]},{"assetCategory":"Fixed Income","assetClass":"Intermediate Core Bond","ticker":"AGG","tickerName":"iShares Core US Aggregate Bond ETF","expenseRatio":0.0003,"yield":0.03957,"modelValues":[{"weight":0.2,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.12999999999999998,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.1,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.06,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":0.2,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.12999999999999998,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.1,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.06,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":null,"modelistFee":null,"smartleafFee":null}]},{"assetCategory":"Fixed Income","assetClass":"Intermediate Core-Plus Bond","ticker":"IUSB","tickerName":"iShares Core Universal USD Bond ETF","expenseRatio":0.0006,"yield":0.042403,"modelValues":[{"weight":0.13,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.09,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.05,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":0.13,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.09,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.05,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":null,"modelistFee":null,"smartleafFee":null}]},{"assetCategory":"Fixed Income","assetClass":"Ultrashort Bond","ticker":"ICSH","tickerName":"iShares Ultra Short Duration Bond Active ETF","expenseRatio":0.0008,"yield":0.043812,"modelValues":[{"weight":0.01,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.01,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.01,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.01,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":0.01,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.01,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.01,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.01,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":null,"modelistFee":null,"smartleafFee":null}]},{"assetCategory":"Fixed Income","assetClass":"Intermediate Government","ticker":"VGIT","tickerName":"Vanguard Intermediate-Term Treasury Index Fd ETF","expenseRatio":0.0003,"yield":0.038435,"modelValues":[{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.01,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.01,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":null,"modelistFee":null,"smartleafFee":null}]},{"assetCategory":"Fixed Income","assetClass":"Bank Loan","ticker":"NCLO","tickerName":"Nuveen AA-BBB CLO ETF","expenseRatio":0.0026,"yield":0.058607,"modelValues":[{"weight":0.06,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.04,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":0.06,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.04,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":null,"modelistFee":null,"smartleafFee":null}]},{"assetCategory":"Fixed Income","assetClass":"Corporate Bond","ticker":"VCIT","tickerName":"Vanguard Intermediate-Term Corp Bond Idx Fund ETF","expenseRatio":0.0003,"yield":0.047533,"modelValues":[{"weight":0.1,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.07,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.05,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":0.1,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.07,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.05,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":null,"modelistFee":null,"smartleafFee":null}]},{"assetCategory":"Fixed Income","assetClass":"High Yield Bond","ticker":"SPHY","tickerName":"State Street SPDR Portfolio High Yield Bond ETF","expenseRatio":0.0005,"yield":0.072419,"modelValues":[{"weight":0.12,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.09,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.05,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":0.12,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.09,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.05,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":null,"modelistFee":null,"smartleafFee":null}]},{"assetCategory":"Fixed Income","assetClass":"Global Bond","ticker":"BWX","tickerName":"State Street SPDR Bloomberg Intl TB ETF","expenseRatio":0.0035,"yield":0.023278,"modelValues":[{"weight":0.04,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.01,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":0.04,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.01,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":null,"modelistFee":null,"smartleafFee":null}]},{"assetCategory":"Fixed Income","assetClass":"Emerging Markets Bond","ticker":"VWOB","tickerName":"Vanguard Emerging Markets Govt Bd Idx ETF","expenseRatio":0.0015,"yield":0.058043,"modelValues":[{"weight":0.08,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.05,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.03,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":0.08,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.05,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.03,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":null,"modelistFee":null,"smartleafFee":null}]},{"assetCategory":"Alternative","assetClass":"Defined Outcome","ticker":"HEQT","tickerName":"Simplify Hedged Equity ETF","expenseRatio":0.0043,"yield":0.011951,"modelValues":[{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.04,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.06,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.08,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.04,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.06,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.08,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":null,"modelistFee":null,"smartleafFee":null}]},{"assetCategory":"Alternative","assetClass":"Commodities Broad Basket","ticker":"BCI","tickerName":"abrdn Bloomberg All Commodity Strat K-1 Free ETF","expenseRatio":0.0026,"yield":0.11136,"modelValues":[{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.00025},{"weight":null,"modelistFee":null,"smartleafFee":null},{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":0.02,"modelistFee":0.0006,"smartleafFee":0.0005},{"weight":null,"modelistFee":null,"smartleafFee":null}]}],"ranges":{"expenseRatio":{"min":0.0005730000000000002,"max":0.000926},"debitFromAccount":{"min":0.0008499999999999998,"max":0.0014300000000000003},"totalCost":{"min":0.0015290000000000002,"max":0.002244}}};
+
+function formatBps(value) {
+  return (Number(value || 0) * 10000).toFixed(1) + " bps";
+}
+function formatPct(value) {
+  return value == null ? "-" : (Number(value) * 100).toFixed(2) + "%";
+}
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+function modelLabel(model) {
+  return model.id.replace("CRY", "") + " | " + model.modelName.replace("Corey Wealth ", "").replace(" Direct Index", " DI");
+}
+
+const selector = document.getElementById("model-selector");
+feeData.models.forEach((model, index) => {
+  const button = document.createElement("button");
+  button.className = "model-chip";
+  button.type = "button";
+  button.textContent = modelLabel(model);
+  button.addEventListener("click", () => renderModel(index));
+  selector.appendChild(button);
+});
+
+function renderModel(index) {
+  const model = feeData.models[index];
+  document.querySelectorAll(".model-chip").forEach((button, buttonIndex) => {
+    button.classList.toggle("active", buttonIndex === index);
+  });
+  document.getElementById("selected-title").textContent = model.id + " - " + model.modelName;
+  document.getElementById("selected-subtitle").textContent =
+    model.implementation + " | Holding-level fee contribution from the Fee Calculator sheet.";
+  document.getElementById("selected-type").textContent = model.accountType;
+  document.getElementById("stat-expense").textContent = formatBps(model.expenseRatio);
+  document.getElementById("stat-modelist").textContent = formatBps(model.modelistFee);
+  document.getElementById("stat-smartleaf").textContent = formatBps(model.smartleafFee);
+  document.getElementById("stat-total").textContent = formatBps(model.totalCost);
+
+  let carriedCategory = "";
+  const rows = feeData.holdingsRows
+    .map((row) => {
+      if (row.assetCategory) carriedCategory = row.assetCategory;
+      return { ...row, displayCategory: row.assetCategory || carriedCategory };
+    })
+    .filter((row) => {
+      const values = row.modelValues[index];
+      return values && values.weight != null && Number(values.weight) !== 0;
+    });
+
+  const body = document.getElementById("holdings-body");
+  body.innerHTML = rows
+    .map((row) => {
+      const values = row.modelValues[index];
+      const expenseContribution = Number(values.weight || 0) * Number(row.expenseRatio || 0);
+      const debitContribution =
+        Number(values.weight || 0) *
+        (Number(values.modelistFee || 0) + Number(values.smartleafFee || 0));
+      return `
+        <tr>
+          <td class="cat">${escapeHtml(row.displayCategory)}</td>
+          <td><span class="ticker">${escapeHtml(row.ticker)}</span></td>
+          <td><div class="holding-name" title="${escapeHtml(row.tickerName)}">${escapeHtml(row.tickerName)}</div></td>
+          <td>${formatPct(values.weight)}</td>
+          <td>${formatBps(row.expenseRatio)}</td>
+          <td>${formatBps(expenseContribution)}</td>
+          <td>${formatBps(values.modelistFee)}</td>
+          <td>${formatBps(values.smartleafFee)}</td>
+          <td>${formatBps(debitContribution)}</td>
+        </tr>`;
+    })
+    .join("");
+
+  document.getElementById("holdings-foot").innerHTML = `
+    <tr>
+      <td colspan="3">Weighted Total</td>
+      <td>100.00%</td>
+      <td></td>
+      <td>${formatBps(model.expenseRatio)}</td>
+      <td>${formatBps(model.modelistFee)}</td>
+      <td>${formatBps(model.smartleafFee)}</td>
+      <td>${formatBps(model.debitFromAccount)}</td>
+    </tr>`;
+}
+
+renderModel(0);
+</script>
+</body>
+</html>
